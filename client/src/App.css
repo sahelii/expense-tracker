@@ -1,0 +1,128 @@
+/* client/src/App.css */
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #1e1e2e;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #26273e;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 20px;
+  font-size: 2.5rem;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: #2f305b;
+  color: #ddd;
+  border: 2px solid #393a5d;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: #888;
+}
+
+form input[type="datetime-local"] {
+  color: #bbb;
+}
+
+form div.basic {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1c87c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #155a8a;
+}
+
+div.transactions {
+  margin-top: 20px;
+}
+
+div.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #393a5d;
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+div.transaction div.description {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price.green {
+  color: #28a745;
+  font-weight: bold;
+}
+
+div.price.red {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+div.transaction div.datetime {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+div.transaction + div.transaction {
+  margin-top: 15px;
+}
